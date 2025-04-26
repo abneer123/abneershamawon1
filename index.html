@@ -1,119 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abneer Shamawon - Personal Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abneer Shamawon - Personal Website</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
 
-        /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: #333;
-            color: #fff;
-        }
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #333;
+      color: #fff;
+    }
 
-        .navbar .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
 
-        .navbar ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
 
-        .navbar ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
 
-        .navbar ul li a:hover {
-            color: #ff7f50;
-        }
+    .navbar ul li a:hover {
+      color: #ff7f50;
+    }
 
-        /* Hero Section */
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 80vh;
-            padding: 0 50px;
-            background: #f9f9f9;
-            text-align: center;
-        }
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      padding: 0 50px;
+      background: #f9f9f9;
+      text-align: center;
+      flex-direction: column;
+    }
 
-        .hero-text h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            color: #333;
-        }
+    .hero-content {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-        .hero-text p {
-            font-size: 18px;
-            margin-bottom: 30px;
-            color: #777;
-        }
+    .hero-text {
+      max-width: 500px;
+    }
 
-        .highlight {
-            color: #ff7f50;
-        }
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #333;
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: #ff7f50;
-            color: #fff;
-            border: none;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-            transition: background 0.3s ease;
-        }
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #777;
+    }
 
-        .btn:hover {
-            background-color: #ff5722;
-        }
+    .highlight {
+      color: #ff7f50;
+    }
 
-        .hero-image {
-            display: none;
-        }
-    </style>
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #ff7f50;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      background-color: #ff5722;
+    }
+
+    .hero-image {
+      position: relative;
+      width: 250px;
+      height: 250px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 8px solid #ff7f50;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Optional: Add animation */
+    .hero-image img:hover {
+      transform: scale(1.05);
+      transition: 0.3s ease;
+    }
+
+  </style>
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">Abneer Shamawon</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Hello, I'm <span class="highlight">Abneer Shamawon</span></h1>
-            <p>Currently studying and exploring new opportunities. Passionate about learning and growing!</p>
-            <a href="about.html" class="btn">Learn More About Me</a>
-            <a href="contact.html" class="btn">Get in Touch</a>
-        </div>
-    </section>
+  <header class="navbar">
+    <div class="logo">Abneer Shamawon</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="https://media-hosting.imagekit.io/9ddd83088eeb45b3/image-upscaled.jpeg?Expires=1840263346&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=LWBKHacX8zCGsalwN1MmCEplaTkuBYI34eMJpTAQawo7FXeD3X44N52FvNNZv2672lbJ4QywQSGKrCpciZqhwrf7stk8tl07UWk7rxOv6vGCgje8qoumeP56RNlwkPY0XpGCjD-FHr02QQmvmWp9i~QCVVr2JtfA9W2oICMcCehXG~r0smA-ZG-Qqt7a1agnhXA3dp1VQ57SObH2yrTUuEfoj4sOvbvavnCc8FgSAVHYO-Ys3EzPXzl1cYnNvG2QQurA~k7xqsDfW879vKEKFZNBCrHjaoyuR9lNjruqKEzPlcHKit72JE3XAo~hk3HMQPN1RSCEJtsu5e0THsErsg" alt="Abneer Shamawon">
+      </div>
+
+      <div class="hero-text">
+        <h1>Hello, I'm <span class="highlight">Abneer Shamawon</span></h1>
+        <p>Currently studying and exploring new opportunities. Passionate about learning and growing!</p>
+        <a href="about.html" class="btn">Learn More About Me</a>
+        <a href="contact.html" class="btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
